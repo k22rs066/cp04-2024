@@ -86,5 +86,21 @@
         font-size: 30px;
         position:absolute; top:450px; left:190px; width:80px; height:40px;   
     }
+
+    .flash {
+        animation: flash 1s ease-out 3;
+    }
+
+    @keyframes flash {
+        0% {
+            background-color: white;
+        }
+        50% {
+            background-color: red; /* フラッシュの色はここで変更できます */
+        }
+        100% {
+            background-color: white;
+        }
+    }
     
     input[type=number] {text-align: right;}

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-
+    
   </style>
   <script>
     // timer処理
@@ -215,6 +215,17 @@
         }
     } 
 
+    function alarm(){
+
+  // 画面をフラッシュさせる
+  document.body.classList.add('flash');
+
+  // アニメーション終了後にクラスを削除
+  setTimeout(function() {
+    document.body.classList.remove('flash');
+  }, 1000); // アニメーションの時間に合わせて調整
+    }
+
   </script>
 </head>
 <body>
@@ -229,6 +240,10 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <input type="number" id="minute" value=0 >
-    <input type="number" id="second" value=15 >
+    <input type="number" id="second" value=5 >
+
+<script>
+    
+</script>
 </body>
 </html>
