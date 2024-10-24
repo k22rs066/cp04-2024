@@ -226,6 +226,24 @@
   }, 1000); // アニメーションの時間に合わせて調整
     }
 
+    // 現在時刻を表示
+    function twoDigit(num){
+        let ret;
+        if( num < 10)
+            ret = "0" + num;
+        else
+            ret = num;
+        return ret;
+    }
+    function showClock(){
+        let nowTime = new Date();
+        let nowHour = twoDigit( nowTime.getHours() );
+        let nowMin  = twoDigit( nowTime.getMinutes() );
+        let nowSec  = twoDigit( nowTime.getSeconds() );
+        let msg = "現在時刻：" + nowHour + ":" + nowMin + ":" + nowSec;
+        document.getElementById("realtime").innerHTML = msg;
+    }
+    setInterval('showClock()',1000);
   </script>
 </head>
 <body>
@@ -241,6 +259,8 @@
     <button id="btnC">Set</button>  
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=5 >
+
+    <p id="realtime"></p>
 
 <script>
     

@@ -96,7 +96,7 @@
             background-color: white;
         }
         50% {
-            background-color: red; /* フラッシュの色はここで変更できます */
+            background-color: red; /* フラッシュの色はここで変更 */
         }
         100% {
             background-color: white;
