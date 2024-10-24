@@ -102,5 +102,12 @@
             background-color: white;
         }
     }
+
+    #realtime {     /* 現在時刻の表示位置を調整 */
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     
     input[type=number] {text-align: right;}
