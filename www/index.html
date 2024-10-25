@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#preset3').click(function(e) {
+            btnCClick(e);
+        });
         init();
     });
     
@@ -198,8 +202,7 @@
         $("#time").html("経過時間 : 0");
         $("#remain").html("残り時間: " + period);
     }
-    
- 
+
     // 繰り返し実行する処理
     function timer(){  
         if(active){
@@ -263,11 +266,5 @@
 
     <p id="realtime"></p>
 
-    <button id="3min">3分</button>
-    <button id="5min">5分</button>
-
-<script>
-    
-</script>
 </body>
 </html>

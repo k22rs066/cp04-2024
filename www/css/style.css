@@ -104,6 +104,7 @@
     }
 
     #realtime {     /* 現在時刻の表示位置を調整 */
+        font-family: Georgia, 'Times New Roman', Times, serif;
         position: absolute;
         top: 60%;
         left: 50%;
